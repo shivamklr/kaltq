@@ -8,9 +8,7 @@ export const BookCallBtn: React.FC = () => {
   //handleClick function
   const handleClick = async () => {
     setIsLoading(true);
-    const { data, error } = await supabaseClient.functions.invoke('create-stripe-checkout-session', {
-      body: { foo: 'bar' }
-    })
+    const { data, error } = await supabaseClient.functions.invoke('create-stripe-checkout');
     if (error) {
       console.error(error)
     }
