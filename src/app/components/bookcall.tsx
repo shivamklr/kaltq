@@ -18,12 +18,9 @@ export const BookCallBtn: React.FC = () => {
     window.location.href = url;
   }
   return (
-    // Disabling until we have a Stripe account
-    // <a onClick={handleClick} className="cursor-pointer px-4 py-2 text-sm duration-500 text-white bg-zinc-500 hover:bg-zinc-400 rounded-md">
-    //   {isLoading ? <span>Loading...</span> : <span className=''>Book a call</span>}
-    // </a>
-    <span className="cursor-not-allowed px-4 py-2 text-sm duration-500 text-white bg-zinc-500 hover:bg-zinc-400 rounded-md">
-      Site Under Construction
-    </span>
+    <a onClick={handleClick} className="cursor-pointer px-4 py-2 text-sm duration-500 text-white bg-zinc-500 hover:bg-zinc-400 rounded-md">
+      {isLoading ? <span>Loading...</span> : <span className=''>Book a call</span>}
+    </a>
+
   )
 }
