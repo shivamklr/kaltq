@@ -14,7 +14,7 @@ const PrivacyPolicy: React.FC<PrivacyPolicyProps> = ({
     <div className="text-gray-50 max-w-4xl mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold mb-4">Privacy Policy</h1>
       <p className="mb-6">
-        This Privacy Policy explains how {companyName} (the "Company," "we," "us," or "our") collects, uses, and safeguards the personal information of our users.
+        This Privacy Policy explains how {companyName} (the &quot;Company,&quot; &quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) collects, uses, and safeguards the personal information of our users.
       </p>
 
       {privacyPolicyContent.map((section, index) => (
